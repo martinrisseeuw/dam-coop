@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700');
+
+:root {
+  --brand-color: #d8222a;
+  --creme-color: #f9fbf7;
+  --embassies-black: #282832;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  font-size: 1em;
+  background: #3C39C8;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  font-style: normal;
+  font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700
+}
+
+h1,
+.alpha {
+  font-size: 2em;
+  line-height: 110%;
+  font-style: normal;
+  font-weight: bold;
+}
+
+li {
+  line-height: 160%
+}
+
+@media all and (min-width: 52em) {
+  body {
+    padding: 3em 0;
+  }
+  h1,
+  .alpha {
+    font-size: 4em;
+  }
+  h3{
+    font-size: 2em;
+  }
+  li {
+    font-size: 1.2em;
+  }
+
+  .slide-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .slide-2 .desc {
+    max-width: 760px;
+    padding-right: 8em;
+  }
+}
+
+.diagram {
+  margin-top: 40px;
+}
+
+
+.slide-2  li,
+.slide-3 li {
+  list-style: decimal inside;
+  margin-bottom: 1em
+}
+
+
+
+.section-padding {
+  padding: 3em 1.5em 0;
+}
+
+.section-padding:last-child {
+  padding: 3em 1.5em;
+}
+
+@media all and (min-width: 52em) {
+  .section-padding {
+    padding: 4em 6em;
+  }
+
+
+  .section-padding:last-child {
+    padding: 3em 6em 8em;
+  }
+
+}
+
+
+p {
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+p.small {
+  font-size: 0.75em;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1320px;
+  margin: auto
+}
+
+.title-margin {
+  margin-bottom: 8px;
+}
+
+.tm-big {
+  margin-bottom: 1rem;
+}
+.tm-huge {
+  margin-bottom: 2rem;
+}
+
+.serif {
+  font-family: Beausite Grand, serif;
+}
+
+.std-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media all and (min-width: 52em) {
+  .std-grid {
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 16px;
+  }
+  p.lead {
+      font-size: 2em;
+  }
+}
+
+.brand-color {
+  color: var(--brand-color);
+}
+
+.center {
+  text-align: center;
+}
+
+
+a {
+  color: #EA5A6B
+}
